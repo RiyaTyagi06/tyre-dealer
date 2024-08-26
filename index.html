@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tyre Dealer - UI</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon -->
+    <link href="assets/img/favicon.jpg" rel="icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header sticky-top">
+      <div class="branding d-flex align-items-center">
+        <div
+          class="container position-relative d-flex align-items-center justify-content-between"
+        >
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/favicon.jpg" alt="" />
+            <h1 class="sitename">Shree Hemkunt Tyres & Services</h1>
+          </a>
+
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="#intro" class="active">Home</a></li>
+              <li><a href="#car-tyres">Car Tyres</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#deals">Deals</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Intro Section -->
+      <section id="intro" class="intro section light-background">
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
+              data-aos="zoom-out" data-aos-delay="200"
+            >
+              <h1>Your Trusted Tyre Dealer in <span>Indirapuram</span></h1>
+              <p>
+                Explore TyreHub, where we provide top-quality tyres and expert
+                services to keep you on the road
+              </p>
+              <div class="d-flex">
+                <a href="#contact" class="btn-get-started">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section id="stats" class="stats section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-3 justify-content-center">
+            <div
+              class="col-lg-3 col-md-6 d-flex flex-column align-items-center"
+            >
+              <i class="bi bi-emoji-smile"></i>
+              <div class="stats-item">
+                <div class="d-flex justify-content-center">
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="2000"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <span>+</span>
+                </div>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 d-flex flex-column align-items-center"
+            >
+              <i class="bi bi-headset"></i>
+              <div class="stats-item">
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="24"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>Hours Of Support</p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 d-flex flex-column align-items-center"
+            >
+              <i class="bi bi-people"></i>
+              <div class="stats-item">
+                <div class="d-flex justify-content-center">
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="15"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <span>+</span>
+                </div>
+                <p>Hard Workers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- car tyres Section -->
+      <section id="car-tyres" class="tyres section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Deals in</h2>
+        </div>
+        <div class="container">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 40
+                  },
+                  "480": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 60
+                  },
+                  "640": {
+                    "slidesPerView": 4,
+                    "spaceBetween": 80
+                  },
+                  "992": {
+                    "slidesPerView": 6,
+                    "spaceBetween": 120
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="assets/img/logo/mrf.png" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/logo/ceat.png" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/logo/bridgestone.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/logo/jk-tyre.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/logo/apollo.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/logo/michelin.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/logo/good-year.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/logo/bedrock.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/logo/maruti.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/logo/firestone.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/logo/vk.jpg" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services provided by dealer Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services available</h2>
+        </div>
+        <div class="container">
+          <div class="row gy-2">
+            <div class="col-xl-3 col-lg-6" data-aos="fade-right">
+              <div class="services-item">
+                <img
+                  src="assets/img/services/wheel-balancing.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <h3>Wheel Balancing</h3>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-book">Book Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6" data-aos="fade-left">
+              <div class="services-item">
+                <img
+                  src="assets/img/services/wheel-alignment.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <h3>Alignment</h3>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-book">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- tyre shopping Section -->
+      <section id="deals" class="tyre-list section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Shop now</h2>
+          <p>
+            <span>Check Our Latest&nbsp;</span>
+            <span class="description-title">Deals</span>
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row gy-4 item-lists">
+            <!-- Dynamic loading of data -->
+          </div>
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center mt-4">
+              <!-- Pagination items will be inserted here -->
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <!-- testimonials Section -->
+      <section id="testimonials" class="reviews section dark-background">
+        <img
+          src="assets/img/reviews/google-review-bg.jpg"
+          class="reviews-bg"
+          alt=""
+        />
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review-item">
+                  <img
+                    src="assets/img/reviews/review-1.png"
+                    class="review-img"
+                    alt=""
+                  />
+                  <h3>Rohit Bhati</h3>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Went for Tyre change . Ultimate service by shoppe boys.
+                      Owner behavior very cool. Guide as per ur budget. Highly
+                      recommend.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="review-item">
+                  <img
+                    src="assets/img/reviews/review-2.png"
+                    class="review-img"
+                    alt=""
+                  />
+                  <h3>Pradeep Kumar</h3>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Best tyre shop in Indirapuram. Good dealing with
+                      customer. All types tyre available here. Price also
+                      responsible. Overall good experience.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="review-item">
+                  <img
+                    src="assets/img/reviews/review-3.png"
+                    class="review-img"
+                    alt=""
+                  />
+                  <h3>Surjit Kumar</h3>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Genuine and Authorized Tyre shop in indirapuram having
+                      latest manufactured stock. Well equipped workshop with
+                      professional staff. I change my care Tyre there, highly
+                      satisfied with the service and lasted available stock..
+                      Keep it up !!!</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="review-item">
+                  <img
+                    src="assets/img/reviews/review-4.png"
+                    class="review-img"
+                    alt=""
+                  />
+                  <h3>Md Nasir</h3>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Excellent service from start to finish. 100% satisfaction
+                      with the job, professionalism and overall service.We were
+                      delighted with your courteous , prompt and professional
+                      service.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="review-item">
+                  <img
+                    src="assets/img/reviews/review-5.png"
+                    class="review-img"
+                    alt=""
+                  />
+                  <h3>Akash Tomar</h3>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Best shoppe in Indirapuram. Good customer service. After
+                      sale service amazing. Overall nice experience.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Faq Section -->
+      <section id="faq" class="faq section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>F.A.Q</h2>
+          <p>
+            <span>Frequently Asked</span>
+            <span class="description-title">Questions</span>
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+              <div class="faq-container">
+                <div class="faq-item">
+                  <h3>
+                    What is the approximate tyre life of the selected tyre in
+                    terms of Kms?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Hey there, Usually, tyres have the capacity to run
+                      approximately 30,000km to 40,000 km if they are taken good
+                      care. You can expect the same from these tyres as per our
+                      customer reviews.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <div class="faq-item">
+                  <h3>How to order a tyre?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Hey there, Kindly enter your PINCODE and the required
+                      details by clicking on VIEW OCTOBER OFFERS. You can also
+                      enter your PINCODE in the space where "your Pincode" is
+                      mentioned to check the precise price, availability and
+                      also for placing an order. Please feel free to consult our
+                      Dealers regarding tyre fitment, warranty, details on the
+                      year that this tyre was manufactured and other doubts,
+                      with the help of this
+                      <a class="faq-link" href="#intro">link</a>.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <div class="faq-item">
+                  <h3>
+                    What is the approximate tyre life of the selected tyre in
+                    terms of Kms?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Hey there, Usually, tyres have the capacity to run
+                      approximately 30,000km to 40,000 km if they are taken good
+                      care. You can expect the same from these tyres as per our
+                      customer reviews.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <div class="faq-item">
+                  <h3>How to order a tyre?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Hey there, Kindly enter your PINCODE and the required
+                      details by clicking on VIEW OCTOBER OFFERS. You can also
+                      enter your PINCODE in the space where "your Pincode" is
+                      mentioned to check the precise price, availability and
+                      also for placing an order. Please feel free to consult our
+                      Dealers regarding tyre fitment, warranty, details on the
+                      year that this tyre was manufactured and other doubts,
+                      with the help of this
+                      <a class="faq-link" href="#intro">link</a>.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Contact</h2>
+          <p>
+            <span>Need Help?</span>
+            <span class="description-title">Contact Us</span>
+          </p>
+        </div>
+
+        <div class="container" 
+        data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-5">
+              <div class="info-wrap">
+                <div
+                  class="info-item d-flex" data-aos="fade-up" data-aos-delay="200"
+                >
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>
+                      PLOT NUMBER-09 GROUND FLOOR CISF CAMPUS ROAD, AHINSA
+                      KHAND-02 INDIRAPURAM, Ghaziabad, Uttar Pradesh, 201014
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="info-item d-flex" data-aos="fade-up" data-aos-delay="200"
+                >
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call Us</h3>
+                    <p>+91 99999 99999</p>
+                  </div>
+                </div>
+
+                <div
+                  class="info-item d-flex" data-aos="fade-up" data-aos-delay="200"
+                >
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p>shreehemkunttyreservices@gamil.com</p>
+                  </div>
+                </div>
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14006.276773909989!2d77.3789929!3d28.6426711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1bae0e73a15%3A0xc268cb9ed2106c69!2sCEAT%20Shoppe%2C%20Shree%20Hemkunt%20Tyres%20And%20Services!5e0!3m2!1sen!2sin!4v1724618992493!5m2!1sen!2sin"
+                  frameborder="0"
+                  style="border: 0; width: 100%; height: 270px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <form
+                method="post"
+                class="email-form" data-aos="fade-up" data-aos-delay="100"
+              >
+                <div class="row gy-4">
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <label for="name-field" class="pb-2">Your Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name-field"
+                      class="form-control"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <label for="email-field" class="pb-2">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email-field"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
+                    <label for="subject-field" class="pb-2">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject-field"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
+                    <label for="message-field" class="pb-2">Message</label>
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="10"
+                      id="message-field"
+                      required=""
+                    ></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container footer-top">
+        <div class="row gy-1">
+          <h4>Follow Us</h4>
+          <p>
+            Join Our Online Community and Never Miss Out on the Latest Tyre
+            Trends, Tips, and Deals
+          </p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          &copy;
+          <strong class="px-1 sitename"
+            >Shree Hemkunt Tyres and Services</strong
+          >
+          <span>All Rights Reserved</span>
+        </p>
+
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
